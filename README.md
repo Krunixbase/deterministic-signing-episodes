@@ -1,6 +1,5 @@
 # deterministic-signing-episodes
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/Krunixbase/deterministic-signing-episodes/ci.yml)
 ![License](https://img.shields.io/github/license/Krunixbase/deterministic-signing-episodes)
 ![Repo Size](https://img.shields.io/github/repo-size/Krunixbase/deterministic-signing-episodes)
 ![Issues](https://img.shields.io/github/issues/Krunixbase/deterministic-signing-episodes)
