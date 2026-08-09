@@ -31,8 +31,12 @@ These guarantees make the system suitable for regulatory, cross‑organizational
 ## Repository Structure
 
 ```
-E:.
+|   CHANGELOG.md
+|   CODE_OF_CONDUCT.md
+|   CONTRIBUTING.md
+|   LICENSE
 |   README.md
+|   SECURITY.md
 |
 +---core
 |   +---agent
