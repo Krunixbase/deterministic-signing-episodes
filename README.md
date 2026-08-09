@@ -1,4 +1,13 @@
-# Deterministic Signing Episodes for Distributed Trust  
+# deterministic-signing-episodes
+
+![Build Status](https://img.shields.io/github/actions/workflow/status/Krunixbase/deterministic-signing-episodes/ci.yml)
+![License](https://img.shields.io/github/license/Krunixbase/deterministic-signing-episodes)
+![Repo Size](https://img.shields.io/github/repo-size/Krunixbase/deterministic-signing-episodes)
+![Issues](https://img.shields.io/github/issues/Krunixbase/deterministic-signing-episodes)
+![Stars](https://img.shields.io/github/stars/Krunixbase/deterministic-signing-episodes)
+![Rust Version](https://img.shields.io/badge/rust-1.70%2B-orange)
+![Security Policy](https://img.shields.io/badge/security-policy-blue)
+
 Deterministic, reproducible, and auditable signing workflows with threshold approval and distributed trust.
 
 ## Overview  
