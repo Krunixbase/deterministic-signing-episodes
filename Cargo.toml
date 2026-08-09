@@ -1,0 +1,14 @@
+[package]
+name = "deterministic-signing-episodes"
+version = "0.1.0"
+edition = "2021"
+authors = ["Krunixbase <Krunixbase@users.noreply.github.com>"]
+license = "MIT"
+description = "Deterministic signing episodes — Phase I–III cryptographic determinism model."
+
+[dependencies]
+rand = "0.8"
+sha2 = "0.10"
+zeroize = "1.6"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
