@@ -1,13 +1,54 @@
-# deterministic-signing-episodes
+<p align="center">
+  <img src="assets/branding/logo/png/deterministic_logo_512.png"
+       alt="Deterministic Signing Episodes Logo"
+       width="180" />
+</p>
 
-![License](https://img.shields.io/github/license/Krunixbase/deterministic-signing-episodes)
-![Repo Size](https://img.shields.io/github/repo-size/Krunixbase/deterministic-signing-episodes)
-![Issues](https://img.shields.io/github/issues/Krunixbase/deterministic-signing-episodes)
-![Stars](https://img.shields.io/github/stars/Krunixbase/deterministic-signing-episodes)
-![Rust Version](https://img.shields.io/badge/rust-1.70%2B-orange)
-![Security Policy](https://img.shields.io/badge/security-policy-blue)
+<h1 align="center">deterministic-signing-episodes</h1>
 
-Deterministic, reproducible, and auditable signing workflows with threshold approval and distributed trust.
+<p align="center">
+Deterministic • Reproducible • Auditable Signing Workflows
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/license/Krunixbase/deterministic-signing-episodes" />
+  <img src="https://img.shields.io/github/repo-size/Krunixbase/deterministic-signing-episodes" />
+  <img src="https://img.shields.io/github/issues/Krunixbase/deterministic-signing-episodes" />
+  <img src="https://img.shields.io/github/stars/Krunixbase/deterministic-signing-episodes" />
+  <img src="https://img.shields.io/badge/rust-1.70%2B-orange" />
+  <img src="https://img.shields.io/badge/security-policy-blue" />
+</p>
+
+---
+
+## Overview
+
+This repository implements **deterministic signing episodes** — isolated, reproducible execution units that reconstruct trust.
+
+The system is designed for **high‑assurance, multi‑agent signing workflows**, where transparency, reproducibility, and auditability are critical.
+
+The project evolves through three phases:
+
+- **Phase I** — deterministic execution core  
+- **Phase II** — deterministic distributed trust  
+- **Phase III** — adoption, interoperability, and standardization  
+
+Documentation for each phase is available in the `docs/` directory.
+
+---
+
+## Key Guarantees
+
+- **Strict determinism** — no randomness, no hidden state, no global state  
+- **Ephemeral secret handling** — secrets reconstructed only during execution and zeroized afterward  
+- **Complete auditability** — every step is recorded in a structured, reproducible audit record  
+- **Threshold approval** — deterministic multi‑agent authorization  
+- **Deterministic Shamir Secret Sharing (SSS)** — threshold reconstruction without probabilistic behavior  
+
+These guarantees make the system suitable for regulatory, cross‑organizational, and high‑assurance environments.
+
+---
+
 
 ## Overview  
 This repository implements **deterministic signing episodes** — isolated, reproducible execution units that reconstruct ephemeral signing material, produce deterministic signatures, and emit complete audit records.
