@@ -1,118 +1,149 @@
-# deterministic-signing-episodes — Documentation Overview (Technical Specification)
+# Documentation — Deterministic Signing Episodes
 
-## Purpose
-This document provides an overview of all technical documentation stored in the `docs/` directory.  
-It defines the structure, purpose, and deterministic rules for maintaining consistent, reproducible, and modular documentation across the deterministic-signing-episodes project.
+The `docs/` directory contains all technical, architectural, and conceptual documentation for the deterministic‑signing‑episodes project.  
+This documentation explains the deterministic model, execution guarantees, audit consistency, threshold logic, and the multi‑phase evolution of the system.
 
-The `docs/` directory contains authoritative specifications for architecture, cryptographic workflows, determinism guarantees, audit processes, and reconstruction logic.
+Use this file as the entry point.
 
 ---
 
-## Directory Structure
+## 📌 Start Here
+
+If you are new to the project, begin with:
+
+- **[main.md](main.md)** — high‑level introduction  
+- **[architecture.md](architecture.md)** — system architecture overview  
+- **[episode_determinism.md](episode_determinism.md)** — determinism guarantees  
+- **[audit.md](audit.md)** — deterministic audit model  
+
+These documents provide the conceptual foundation needed to understand the core modules.
+
+---
+
+## 📂 Directory Structure
+
 ```
-docs
-│
-├── agent_episode.md
-├── architecture.md
-├── audit.md
-├── audit_consistency.md
-├── episode_determinism.md
-├── legal.md
-├── main.md
-├── phase_I.md
-├── phase_II.md
-├── phase_III.md
-├── roadmap.md
-├── shamir.md
-├── shamir_reconstruction.md
-├── team.md
-└── verification.md
+docs/
+ ├── agent_episode.md
+ ├── architecture.md
+ ├── audit.md
+ ├── audit_consistency.md
+ ├── episode_determinism.md
+ ├── legal.md
+ ├── main.md
+ ├── phase_I.md
+ ├── phase_II.md
+ ├── phase_III.md
+ ├── roadmap.md
+ ├── shamir.md
+ ├── shamir_reconstruction.md
+ ├── team.md
+ └── verification.md
 ```
 
 ---
 
-## Document Overview
+## 🧩 Key Documents
 
-### agent_episode.md
-Defines the deterministic agent episode model, including state transitions, constraints, and reproducibility guarantees.
+### [main.md](main.md)
+High‑level overview of deterministic signing episodes, trust reconstruction, and project goals.
 
-### architecture.md
-Provides a high-level and low-level architectural overview of deterministic-signing-episodes, including module boundaries and data flow.
+### [architecture.md](architecture.md)
+System architecture, module boundaries, trust zones, and execution flow.
 
-### audit.md
-Describes the audit model, audit events, and deterministic logging requirements.
+### [episode_determinism.md](episode_determinism.md)
+Formal determinism guarantees:
+- no randomness  
+- no hidden state  
+- reproducible execution  
+- deterministic branching  
 
-### audit_consistency.md
-Defines rules ensuring that audit logs remain deterministic, reproducible, and cryptographically verifiable.
+### [audit.md](audit.md)
+Deterministic audit trail model:
+- reproducible event sequencing  
+- structured audit entries  
+- deterministic hashing  
 
-### episode_determinism.md
-Explains how deterministic episodes are constructed, validated, and reproduced across environments.
+### [audit_consistency.md](audit_consistency.md)
+Consistency proofs and validation rules for audit logs.
 
-### legal.md
-Contains legal considerations, licensing notes, and compliance requirements relevant to deterministic cryptographic workflows.
+### [shamir.md](shamir.md)
+Deterministic Shamir Secret Sharing (SSS) model.
 
-### main.md
-Acts as the central entry point for documentation, linking all major conceptual areas.
+### [shamir_reconstruction.md](shamir_reconstruction.md)
+Threshold reconstruction without probabilistic behavior.
 
-### phase_I.md / phase_II.md / phase_III.md
-Define the multi-phase development and verification roadmap for deterministic-signing-episodes.
+### [verification.md](verification.md)
+Verification workflows for multi‑agent signing episodes.
 
-### roadmap.md
-Provides a long-term roadmap for the project, including milestones, cryptographic goals, and integration plans.
+### [legal.md](legal.md)
+Legal considerations, compliance, and regulatory alignment.
 
-### shamir.md
-Describes Shamir’s Secret Sharing as used in deterministic-signing-episodes, including constraints and deterministic reconstruction rules.
-
-### shamir_reconstruction.md
-Defines the deterministic reconstruction process, including validation, threshold logic, and reproducibility guarantees.
-
-### team.md
-Documents contributors, roles, and responsibilities.
-
-### verification.md
-Defines deterministic verification rules, including cryptographic checks, reproducibility constraints, and validation workflows.
+### [team.md](team.md)
+Team structure, roles, and responsibilities.
 
 ---
 
-## Deterministic Documentation Rules
+## 🔁 Project Phases
 
-### Authoritative Sources
-- All documents in `docs/` are authoritative.
-- No external documentation may override or conflict with these files.
+The project evolves through three deterministic phases:
 
-### Structure Requirements
-- Each document must focus on a single conceptual area.
-- Cross-references must be explicit and deterministic.
-- No duplicated content across documents.
+### [phase_I.md](phase_I.md)
+Deterministic execution core.
 
-### Rendering Requirements
-- Documentation must render identically across platforms.
-- No inline styling outside Markdown.
-- Diagrams must be deterministic (SVG preferred).
+### [phase_II.md](phase_II.md)
+Deterministic distributed trust.
 
-### Repository Hygiene
-- No temporary or experimental documents.
-- No alternative versions of the same document.
-- All updates must preserve deterministic structure.
+### [phase_III.md](phase_III.md)
+Adoption, interoperability, and standardization.
 
 ---
 
-## Consistency Requirements
-- All contributors must follow the documentation structure defined in this README.
-- Any new document must be placed in the correct conceptual category.
-- Any change to documentation must be reflected in this README.
+## 🧪 Testing & Validation
+
+Tests validating determinism and reconstruction logic are located in:
+
+```
+tests/
+ ├── audit_consistency.rs
+ ├── episode_determinism.rs
+ └── shamir_reconstruction.rs
+```
+
+These tests correspond directly to the documentation in this directory.
 
 ---
 
-## Related Modules
-- `assets/branding/` — deterministic branding specifications  
-- `core/` — deterministic cryptographic logic  
-- `examples/` — usage examples and integration patterns  
+## 🛠 Related Code
+
+Core implementation is located in:
+
+```
+core/
+ ├── agent/
+ ├── audit/
+ ├── shamir/
+ └── zeroize/
+```
+
+Documentation and code are intentionally aligned to ensure reproducibility and clarity.
 
 ---
 
-## Notes
-This specification ensures deterministic, reproducible documentation across the deterministic-signing-episodes project.  
-All contributors must adhere to these rules to maintain consistency and integrity of the documentation system.
+## 🔐 Security Model
+
+Documentation in this directory supports the system’s guarantees:
+
+- deterministic secret handling  
+- reproducible auditability  
+- threshold approval  
+- zero residual state  
+- cross‑organizational trust reconstruction  
+
+---
+
+## 📄 Licensing
+
+All documentation is licensed under **GPL‑3.0** as part of the deterministic‑signing‑episodes project.
 
 ---
