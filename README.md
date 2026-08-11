@@ -80,12 +80,67 @@ These guarantees make the system suitable for regulatory, cross‑organizational
 ## Repository Structure
 
 ```
+|   .gitignore
+|   Cargo.toml
 |   CHANGELOG.md
 |   CODE_OF_CONDUCT.md
 |   CONTRIBUTING.md
+|   ESP_BUDGET.md
+|   ESP_PROPOSAL.md
+|   ESP_ROADMAP.md
 |   LICENSE
 |   README.md
 |   SECURITY.md
+|   WHY_ETHEREUM.md
+|
++---assets
+|   \---branding
+|       |   README.md
+|       |
+|       +---badges
+|       |       deterministic_badge.svg
+|       |       deterministic_badge_dark.svg
+|       |       deterministic_badge_light.svg
+|       |       README.md
+|       |
+|       +---colors
+|       |       palette.md
+|       |       README.md
+|       |
+|       +---guidelines
+|       |       branding_guidelines.md
+|       |       README.md
+|       |
+|       +---logo
+|       |   |   README.md
+|       |   |
+|       |   +---png
+|       |   |       deterministic_logo_1024.png
+|       |   |       deterministic_logo_220.png
+|       |   |       deterministic_logo_320.png
+|       |   |       deterministic_logo_512.png
+|       |   |
+|       |   +---svg
+|       |   |       deterministic_logo.svg
+|       |   |       deterministic_logo_mono.svg
+|       |   |       deterministic_logo_outline.svg
+|       |   |
+|       |   \---variants
+|       |       +---mono
+|       |       |       deterministic_logo_mono.svg
+|       |       |
+|       |       +---outline
+|       |       |       deterministic_logo_outline.svg
+|       |       |
+|       |       +---premium
+|       |       |       deterministic_logo_premium.svg
+|       |       |
+|       |       \---solid
+|       |               deterministic_logo_solid.svg
+|       |
+|       \---typography
+|               fonts.md
+|               README.md
 |
 +---core
 |   +---agent
@@ -117,6 +172,9 @@ These guarantees make the system suitable for regulatory, cross‑organizational
 |       team.md
 |       verification.md
 |       zeroize.md
+|
++---examples
+|       eth_integration.rs
 |
 +---src
 |       main.rs
