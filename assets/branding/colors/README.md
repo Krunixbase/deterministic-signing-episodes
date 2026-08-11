@@ -87,4 +87,7 @@ This specification ensures deterministic, reproducible color usage across all Se
 All contributors must adhere to these rules to maintain consistency and integrity of SeedTools visual identity.
 
 ---
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8eb8e34 (Refactor: migrate core modules to src/, update structure, add Cargo.lock)

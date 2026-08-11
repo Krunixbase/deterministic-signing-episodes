@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
 
   <!-- PREMIUM GRADIENT DEFINITION -->
@@ -42,3 +43,49 @@
         stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
 
 </svg>
+=======
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- PREMIUM GRADIENT DEFINITION -->
+  <defs>
+    <linearGradient id="premiumGradient" x1="256" y1="32" x2="256" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00FF88"/>
+      <stop offset="100%" stop-color="#00AA55"/>
+    </linearGradient>
+
+    <filter id="premiumGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- PREMIUM HEXAGON -->
+  <polygon
+    points="256,32 448,160 448,352 256,480 64,352 64,160"
+    fill="url(#premiumGradient)"
+    stroke="#00FF88"
+    stroke-width="24"
+    stroke-linejoin="round"
+    filter="url(#premiumGlow)"
+  />
+
+  <!-- PREMIUM NODES -->
+  <circle cx="256" cy="180" r="22" fill="#FFFFFF"/>
+  <circle cx="180" cy="300" r="22" fill="#FFFFFF"/>
+  <circle cx="332" cy="300" r="22" fill="#FFFFFF"/>
+
+  <!-- PREMIUM CONNECTIONS -->
+  <line x1="256" y1="180" x2="180" y2="300"
+        stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+
+  <line x1="256" y1="180" x2="332" y2="300"
+        stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+
+  <line x1="180" y1="300" x2="332" y2="300"
+        stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+
+</svg>
+>>>>>>> 8eb8e34 (Refactor: migrate core modules to src/, update structure, add Cargo.lock)

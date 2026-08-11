@@ -40,3 +40,9 @@ pub fn reconstruct(shares: &[Share]) -> Result<Secret, String> {
 
     Ok(Secret { repr: combined })
 }
+
+impl Secret {
+    pub fn wipe(&mut self) {
+        self.repr.clear();
+    }
+}

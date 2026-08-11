@@ -146,4 +146,8 @@ Documentation in this directory supports the system’s guarantees:
 
 All documentation is licensed under **GPL‑3.0** as part of the deterministic‑signing‑episodes project.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8eb8e34 (Refactor: migrate core modules to src/, update structure, add Cargo.lock)
 ---

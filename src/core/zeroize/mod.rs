@@ -19,6 +19,6 @@ impl Zeroizable for crate::core::shamir::Secret {
         // - overwrite internal representation
         // - no randomness
         // - no environment-dependent behavior
-        self.repr.clear();
+        self.wipe();
     }
 }
