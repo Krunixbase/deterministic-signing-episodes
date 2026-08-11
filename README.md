@@ -80,6 +80,8 @@ These guarantees make the system suitable for regulatory, cross‑organizational
 ## Repository Structure
 
 ```
+deterministic-signing-episodes/
+| 
 |   .gitignore
 |   Cargo.toml
 |   CHANGELOG.md
@@ -93,46 +95,46 @@ These guarantees make the system suitable for regulatory, cross‑organizational
 |   SECURITY.md
 |   WHY_ETHEREUM.md
 |
-+---assets
+|---assets
 |   \---branding
 |       |   README.md
 |       |
-|       +---badges
+|       |---badges
 |       |       deterministic_badge.svg
 |       |       deterministic_badge_dark.svg
 |       |       deterministic_badge_light.svg
 |       |       README.md
 |       |
-|       +---colors
+|       |---colors
 |       |       palette.md
 |       |       README.md
 |       |
-|       +---guidelines
+|       |---guidelines
 |       |       branding_guidelines.md
 |       |       README.md
 |       |
-|       +---logo
+|       |---logo
 |       |   |   README.md
 |       |   |
-|       |   +---png
+|       |   |---png
 |       |   |       deterministic_logo_1024.png
 |       |   |       deterministic_logo_220.png
 |       |   |       deterministic_logo_320.png
 |       |   |       deterministic_logo_512.png
 |       |   |
-|       |   +---svg
+|       |   |---svg
 |       |   |       deterministic_logo.svg
 |       |   |       deterministic_logo_mono.svg
 |       |   |       deterministic_logo_outline.svg
 |       |   |
 |       |   \---variants
-|       |       +---mono
+|       |       |---mono
 |       |       |       deterministic_logo_mono.svg
 |       |       |
-|       |       +---outline
+|       |       |---outline
 |       |       |       deterministic_logo_outline.svg
 |       |       |
-|       |       +---premium
+|       |       |---premium
 |       |       |       deterministic_logo_premium.svg
 |       |       |
 |       |       \---solid
@@ -142,20 +144,20 @@ These guarantees make the system suitable for regulatory, cross‑organizational
 |               fonts.md
 |               README.md
 |
-+---core
-|   +---agent
+|---core
+|   |---agent
 |   |       episode.rs
 |   |
-|   +---audit
+|   |---audit
 |   |       mod.rs
 |   |
-|   +---shamir
+|   |---shamir
 |   |       mod.rs
 |   |
 |   \---zeroize
 |           mod.rs
 |
-+---docs
+|---docs
 |       agent_episode.md
 |       architecture.md
 |       audit.md
@@ -173,10 +175,10 @@ These guarantees make the system suitable for regulatory, cross‑organizational
 |       verification.md
 |       zeroize.md
 |
-+---examples
+|---examples
 |       eth_integration.rs
 |
-+---src
+|---src
 |       main.rs
 |
 \---tests
