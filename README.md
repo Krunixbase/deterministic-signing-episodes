@@ -21,35 +21,6 @@ Deterministic • Reproducible • Auditable Signing Workflows
 
 ---
 
-## Overview
-
-This repository implements **deterministic signing episodes** — isolated, reproducible execution units that reconstruct trust.
-
-The system is designed for **high‑assurance, multi‑agent signing workflows**, where transparency, reproducibility, and auditability are critical.
-
-The project evolves through three phases:
-
-- **Phase I** — deterministic execution core  
-- **Phase II** — deterministic distributed trust  
-- **Phase III** — adoption, interoperability, and standardization  
-
-Documentation for each phase is available in the `docs/` directory.
-
----
-
-## Key Guarantees
-
-- **Strict determinism** — no randomness, no hidden state, no global state  
-- **Ephemeral secret handling** — secrets reconstructed only during execution and zeroized afterward  
-- **Complete auditability** — every step is recorded in a structured, reproducible audit record  
-- **Threshold approval** — deterministic multi‑agent authorization  
-- **Deterministic Shamir Secret Sharing (SSS)** — threshold reconstruction without probabilistic behavior  
-
-These guarantees make the system suitable for regulatory, cross‑organizational, and high‑assurance environments.
-
----
-
-
 ## Overview  
 This repository implements **deterministic signing episodes** — isolated, reproducible execution units that reconstruct ephemeral signing material, produce deterministic signatures, and emit complete audit records.
 
