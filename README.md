@@ -51,8 +51,8 @@ These guarantees make the system suitable for regulatory, cross‑organizational
 ## Repository Structure
 
 ```
-deterministic-signing-episodes/
 │   .gitignore
+│   Cargo.lock
 │   Cargo.toml
 │   CHANGELOG.md
 │   CODE_OF_CONDUCT.md
@@ -63,6 +63,7 @@ deterministic-signing-episodes/
 │   LICENSE
 │   README.md
 │   SECURITY.md
+│   Structure_repo.md
 │   WHY_ETHEREUM.md
 │
 ├───assets
@@ -114,19 +115,6 @@ deterministic-signing-episodes/
 │               fonts.md
 │               README.md
 │
-├───core
-│   ├───agent
-│   │       episode.rs
-│   │
-│   ├───audit
-│   │       mod.rs
-│   │
-│   ├───shamir
-│   │       mod.rs
-│   │
-│   └───zeroize
-│           mod.rs
-│
 ├───docs
 │       agent_episode.md
 │       architecture.md
@@ -138,6 +126,7 @@ deterministic-signing-episodes/
 │       phase_I.md
 │       phase_II.md
 │       phase_III.md
+│       README.md
 │       roadmap.md
 │       shamir.md
 │       shamir_reconstruction.md
@@ -147,13 +136,34 @@ deterministic-signing-episodes/
 │
 ├───examples
 │       eth_integration.rs
+│       README.md
 │
 ├───src
-│       main.rs
+│   │   lib.rs
+│   │   main.rs
+│   │   README.md
+│   │
+│   └───core
+│       │   mod.rs
+│       │   README.md
+│       │
+│       ├───agent
+│       │       episode.rs
+│       │       mod.rs
+│       │
+│       ├───audit
+│       │       mod.rs
+│       │
+│       ├───shamir
+│       │       mod.rs
+│       │
+│       └───zeroize
+│               mod.rs
 │
 └───tests
         audit_consistency.rs
         episode_determinism.rs
+        README.md
         shamir_reconstruction.rs
 ```
 
@@ -161,19 +171,19 @@ deterministic-signing-episodes/
 
 ## Core Modules
 
-### `core/agent/episode.rs`  
+### `src/core/agent/episode.rs`  
 Deterministic signing episode implementation.  
 Validates inputs, reconstructs ephemeral material, produces signatures, emits audit records, and zeroizes secrets.
 
-### `core/audit/`  
+### `src/core/audit/`  
 Structured audit record generation.  
 Deterministic, reproducible, environment‑independent.
 
-### `core/shamir/`  
+### `src/core/shamir/`  
 Deterministic Shamir Secret Sharing reconstruction.  
 Threshold‑based ephemeral secret recovery.
 
-### `core/zeroize/`  
+### `src/core/zeroize/`  
 Deterministic zeroization of sensitive material.
 
 ---
@@ -224,8 +234,16 @@ All tests:
 
 ```rust
 fn main() {
-    let episode = core::agent::episode::SigningEpisode::new();
-    let result = episode.execute(/* explicit deterministic inputs */);
+    let input = core::agent::episode::EpisodeInput {
+        artifact_hash: "example_hash".to_string(),
+        shares: vec![], // explicit deterministic shares
+        metadata: core::agent::episode::EpisodeMetadata {
+            episode_id: "ep1".to_string(),
+            description: "deterministic test episode".to_string(),
+        },
+    };
+
+    let result = core::agent::episode::Episode::execute(input);
 
     println!("Signature: {:?}", result.signature);
     println!("Audit: {:?}", result.audit_record);

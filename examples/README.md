@@ -74,6 +74,6 @@ These documents explain the deterministic model used in the examples.
 
 ## 📄 Licensing
 
-All examples are licensed under **GPL‑3.0** as part of the deterministic‑signing‑episodes project.
+All examples are licensed under **MIT**, consistent with the deterministic‑signing‑episodes core project.
 
 ---

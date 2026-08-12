@@ -20,11 +20,12 @@ Responsibilities:
 This file ties together the modules located in:
 
 ```
-core/
- ├── agent/
- ├── audit/
- ├── shamir/
- └── zeroize/
+ src
+ └──core/
+    ├── agent/
+    ├── audit/
+    ├── shamir/
+    └── zeroize/
 ```
 
 ---
@@ -72,6 +73,6 @@ These documents describe the deterministic model implemented in the runtime.
 
 ## 📄 Licensing
 
-All source code in this directory is licensed under **GPL‑3.0** as part of the deterministic‑signing‑episodes project.
+The core module is licensed under **MIT**, consistent with the deterministic‑signing‑episodes project.
 
 ---

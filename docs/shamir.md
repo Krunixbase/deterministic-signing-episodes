@@ -1,5 +1,5 @@
 ## Shamir Module — Deterministic Secret Reconstruction  
-The `core/shamir` module provides the deterministic secret reconstruction mechanism used by the signing episode.  
+The `src/core/shamir` module provides the deterministic secret reconstruction mechanism used by the signing episode.  
 In **Phase I**, this module contains a **placeholder deterministic implementation**.  
 In **Phase II**, it becomes a full deterministic Shamir Secret Sharing (SSS) engine.
 
@@ -19,9 +19,10 @@ The module is responsible for:
 ## 2. Module Structure
 
 ```
-core/
-└── shamir/
-    └── mod.rs
+src
+└──core/
+   └──shamir/
+      └──mod.rs
 ```
 
 The module defines:
@@ -124,19 +125,19 @@ Examples:
 ### Episode Module  
 Used by:
 
-- `core/agent/episode.rs`
+- `src/core/agent/episode.rs`
 
 to reconstruct the ephemeral signing secret.
 
 ### Audit Module  
 Provides metadata for:
 
-- `core/audit/mod.rs`
+- `src/core/audit/mod.rs`
 
 ### Zeroize Module  
 Secret is wiped by:
 
-- `core/zeroize/mod.rs`
+- `src/core/zeroize/mod.rs`
 
 ---
 

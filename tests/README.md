@@ -88,11 +88,12 @@ These guarantees are foundational for regulatory, cross‑organizational, and hi
 Tests directly correspond to modules in:
 
 ```
-core/
- ├── agent/
- ├── audit/
- ├── shamir/
- └── zeroize/
+ src
+ └──core/
+    ├── agent/
+    ├── audit/
+    ├── shamir/
+    └── zeroize/
 ```
 
 Documentation alignment ensures that every deterministic rule is both **specified** and **validated**.
@@ -101,6 +102,6 @@ Documentation alignment ensures that every deterministic rule is both **specifie
 
 ## 📄 Licensing
 
-All tests are licensed under **GPL‑3.0** as part of the deterministic‑signing‑episodes project.
+All tests are licensed under **MIT**, consistent with the deterministic‑signing‑episodes core project.
 
 ---

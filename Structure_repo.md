@@ -45,19 +45,20 @@ Each subdirectory contains its own README.md for clarity and modular documentati
 
 ---
 
-# 🔧 core/
+# 🔧 src/core/
 
 Deterministic execution engine — the heart of the system.
 
 ```
-core/
- ├── agent/     — deterministic episode engine
- ├── audit/     — deterministic audit trail subsystem
- ├── shamir/    — deterministic Shamir SSS implementation
- └── zeroize/   — deterministic zeroization routines
+src
+└──core/
+   ├──agent/    — deterministic episode engine
+   ├──audit/    — deterministic audit trail subsystem
+   ├──shamir/   — deterministic Shamir SSS implementation
+   └──zeroize/  — deterministic zeroization routines
 ```
 
-The `core/README.md` explains each module in detail.
+The `src/core/README.md` explains each module in detail.
 
 ---
 
@@ -143,7 +144,7 @@ The repository implements a strict deterministic pipeline:
 6. **Zeroization of sensitive data**  
 7. **Reproducible output**
 
-This model is reflected consistently across `core/`, `docs/`, `tests/`, and `src/`.
+This model is reflected consistently across `src/core/`, `docs/`, `tests/`, and `src/`.
 
 ---
 

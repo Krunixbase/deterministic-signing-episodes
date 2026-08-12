@@ -1,7 +1,7 @@
-# 📄 **docs/agent_episode.md — Module Documentation for `core/agent/episode.rs`**
+# 📄 **docs/agent_episode.md — Module Documentation for `src/core/agent/episode.rs`**
 
 ## 1. Module Overview  
-The `core/agent/episode.rs` module defines the **Deterministic Signing Episode**, the fundamental execution unit of the system.  
+The `src/core/agent/episode.rs` module defines the **Deterministic Signing Episode**, the fundamental execution unit of the system.  
 It provides a strict, reproducible, auditable sequence of operations that transform:
 
 - deterministic inputs  
@@ -32,9 +32,10 @@ It acts as the **execution engine** for the entire deterministic signing model.
 ## 3. Module Structure
 
 ```
-core/
-└── agent/
-    └── episode.rs
+src
+└──core/
+   └──agent/
+      └──episode.rs
 ```
 
 The module typically contains:
@@ -184,19 +185,19 @@ Errors never depend on external state.
 
 ### **Shamir Reconstruction**
 Module:  
-`core/shamir/mod.rs`
+`src/core/shamir/mod.rs`
 
 Used for deterministic secret reconstruction.
 
 ### **Audit Layer**
 Module:  
-`core/audit/mod.rs`
+`src/core/audit/mod.rs`
 
 Used for deterministic audit record generation.
 
 ### **Zeroization**
 Module:  
-`core/zeroize/mod.rs`
+`src/core/zeroize/mod.rs`
 
 Used for secure ephemeral secret lifecycle enforcement.
 

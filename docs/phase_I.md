@@ -141,4 +141,3 @@ It proves that deterministic signing episodes are feasible and provides the foun
 > “Phase I is a frozen technical artifact… ensuring measurable progress toward secure, auditable, and distributed signing workflows.”
 
 ---
-

@@ -1,5 +1,5 @@
 ## Zeroize Module — Deterministic Ephemeral Secret Lifecycle  
-The `core/zeroize` module provides deterministic zeroization utilities used to securely wipe ephemeral secrets after a signing episode completes.
+The `src/core/zeroize` module provides deterministic zeroization utilities used to securely wipe ephemeral secrets after a signing episode completes.
 
 Zeroization is a **mandatory invariant** of the deterministic security model.
 
@@ -22,9 +22,10 @@ This is required for Phase I → Phase II → Phase III.
 ## 2. Module Structure
 
 ```
-core/
-└── zeroize/
-    └── mod.rs
+src
+└──core/
+   └──zeroize/
+      └──mod.rs
 ```
 
 The module defines:
@@ -121,14 +122,14 @@ The `wipe()` function:
 ### Episode Module  
 Zeroization is invoked by:
 
-- `core/agent/episode.rs`
+- `src/core/agent/episode.rs`
 
 after signature generation and audit creation.
 
 ### Shamir Module  
 Secret types from:
 
-- `core/shamir/mod.rs`
+- `src/core/shamir/mod.rs`
 
 must implement `Zeroizable`.
 
@@ -141,11 +142,7 @@ Audit records confirm:
 
 ## 10. Testing
 
-Test file:
-
-```
-tests/zeroize.rs
-```
+- (Phase I) Zeroization is validated indirectly through episode_determinism.rs.
 
 Validates:
 

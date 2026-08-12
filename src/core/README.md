@@ -1,6 +1,6 @@
 # Core Module — Deterministic Signing Episodes
 
-The `core/` directory contains the fundamental execution logic for deterministic signing episodes.  
+The `src/core/` directory contains the fundamental execution logic for deterministic signing episodes.  
 All modules in this directory follow strict reproducibility rules: **no randomness, no hidden state, no global state, no nondeterministic branching**.
 
 This is the heart of the system.
@@ -127,7 +127,7 @@ These guarantees make the system suitable for:
 
 ## 📄 Licensing
 
-The core module is licensed under **GPL‑3.0** as part of the deterministic‑signing‑episodes project.
+The core module is licensed under **MIT**, consistent with the deterministic‑signing‑episodes project.
 
 
 ---

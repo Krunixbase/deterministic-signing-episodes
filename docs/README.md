@@ -119,11 +119,12 @@ These tests correspond directly to the documentation in this directory.
 Core implementation is located in:
 
 ```
-core/
- ├── agent/
- ├── audit/
- ├── shamir/
- └── zeroize/
+ src
+ └──core/
+    ├── agent/
+    ├── audit/
+    ├── shamir/
+    └── zeroize/
 ```
 
 Documentation and code are intentionally aligned to ensure reproducibility and clarity.
@@ -144,10 +145,6 @@ Documentation in this directory supports the system’s guarantees:
 
 ## 📄 Licensing
 
-All documentation is licensed under **GPL‑3.0** as part of the deterministic‑signing‑episodes project.
+All documentation is licensed under **CC‑BY‑4.0**, consistent with the deterministic‑signing‑episodes project and the SeedTools branding specification.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 8eb8e34 (Refactor: migrate core modules to src/, update structure, add Cargo.lock)
 ---
