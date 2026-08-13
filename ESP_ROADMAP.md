@@ -1,138 +1,137 @@
-# Deterministic Signing Episodes — ESP Roadmap
+# **Deterministic Signing Episodes — ESP Roadmap (Full Ecosystem Package)**
 
-This roadmap outlines the development plan for Phase IV and Phase V of the Deterministic Signing Episodes project, focusing on Ethereum integration, deterministic multisig workflows, threshold signing, reproducible verification, and ecosystem standardization.
+This roadmap outlines the development plan for the **full deterministic ecosystem**:
+
+- SeedTools Core  
+- Deterministic Signing Episodes Phase II  
+- Shamir‑Agent Phase II  
+- Krunixbase Ecosystem Integration  
+- Phase III Standardization  
+
+The roadmap is aligned with the **ESP Budget (~630k USD)** and the **SeedTools Enterprise Architecture Standard v1.0**.
 
 ---
 
-## Phase IV — Ethereum Integration (Core ESP Deliverables)
+# **Phase I–III — Completed (Foundation Layer)**
 
-### Milestone 1 — Deterministic Ethereum Transaction Signing  
-**Deliverables:**  
-- deterministic signing episode for Ethereum transactions  
-- deterministic reconstruction of ephemeral signing material  
-- deterministic audit records for Ethereum signing  
-- example: signing a raw Ethereum transaction deterministically  
+The deterministic foundation is fully implemented:
+
+- deterministic execution core — ✔  
+- deterministic audit engine — ✔  
+- deterministic Shamir reconstruction — ✔  
+- deterministic zeroization — ✔  
+- deterministic test suite — ✔  
+- deterministic replay — ✔  
+- deterministic verification — ✔  
+- full documentation — ✔  
+- reproducible infrastructure — ✔  
+- public release v0.1.0 — ✔  
+
+The system is ready for **full ecosystem integration**.
+
+---
+
+# **Phase IV — Ecosystem Integration (Q1 2027)**  
+*(Core ESP Deliverables)*
+
+## **1. SeedTools Core — 120k USD**
+- deterministic safety engine  
+- deterministic cryptographic primitives  
+- deterministic audit infrastructure  
+- deterministic reproducible execution  
+- deterministic security workflows  
 
 **Outcome:**  
-Ethereum transactions can be signed in a fully reproducible, auditable, deterministic manner.
+A stable deterministic foundation for all higher‑level modules.
 
 ---
 
-### Milestone 2 — Deterministic Multisig Workflows  
-**Deliverables:**  
-- deterministic threshold approval logic  
-- deterministic multi‑agent signing episode  
-- reproducible audit trail for multisig operations  
-- example: deterministic multisig signing for DAO treasury actions  
+## **2. Deterministic Signing Episodes Phase II — 180k USD**
+- deterministic multi‑agent signing  
+- deterministic threshold approval  
+- deterministic replay  
+- deterministic verification  
+- deterministic audit records  
+- deterministic distributed trust  
 
 **Outcome:**  
-DAO and multisig workflows become reproducible, auditable, and environment‑independent.
+Ethereum signing workflows become reproducible, auditable, and environment‑independent.
 
 ---
 
-### Milestone 3 — Deterministic Threshold Signing for Sequencers  
-**Deliverables:**  
-- deterministic threshold reconstruction for sequencer keys  
-- reproducible audit records for sequencer authorization  
-- example: deterministic threshold signing for L2 block proposals  
+## **3. Shamir‑Agent Phase II — 90k USD**
+- deterministic threshold workflows  
+- deterministic secret reconstruction  
+- deterministic multi‑party authorization  
+- deterministic ephemeral material recovery  
 
 **Outcome:**  
-L2 sequencer authorization becomes deterministic and auditable.
+Secure deterministic threshold signing for DAOs, multisigs, sequencers, and auditors.
 
 ---
 
-### Milestone 4 — Reproducible Verification Toolkit  
-**Deliverables:**  
-- deterministic verification CLI  
-- reproducible audit record validator  
-- deterministic replay of signing episodes  
-- documentation for auditors and integrators  
+## **4. Krunixbase Ecosystem Integration — 160k–250k USD**
+- deterministic CRM  
+- deterministic KSeF connector  
+- deterministic Truth API  
+- deterministic automations  
+- deterministic reproducible execution  
+- deterministic enterprise workflows  
 
 **Outcome:**  
-Auditors, DAOs, and L2 operators can reproduce signing events exactly.
+A fully integrated deterministic business layer for Ethereum‑connected organizations.
 
 ---
 
-### Milestone 5 — Ethereum Integration Documentation  
-**Deliverables:**  
-- full documentation for Ethereum integration  
-- examples in `/examples/`  
-- reproducible workflows for DAOs, multisigs, sequencers  
-- integration guidelines for developers  
+# **Phase V — Standardization & Ecosystem Adoption (Q2–Q3 2027)**
 
-**Outcome:**  
-Ethereum developers can adopt deterministic signing episodes easily.
-
----
-
-## Phase V — Standardization & Ecosystem Adoption
-
-### Milestone 6 — Deterministic Cryptographic Standards  
-**Deliverables:**  
-- deterministic signing standard draft  
+## **5. Phase III Standardization — 80k USD**
+- deterministic signing standard  
 - deterministic audit record standard  
 - deterministic threshold signing standard  
-- reproducible verification guidelines  
+- deterministic reproducibility guidelines  
+- deterministic verification guidelines  
+- deterministic API  
+- deterministic ecosystem adoption  
 
 **Outcome:**  
-A foundation for deterministic cryptographic standards within the Ethereum ecosystem.
+A reproducible, deterministic cryptographic standard for Ethereum.
 
 ---
 
-### Milestone 7 — Cross‑Organizational Reproducibility Models  
-**Deliverables:**  
-- reproducible multi‑organization signing workflows  
-- deterministic trust models  
-- reproducible governance workflows  
-- deterministic replay guidelines  
+# **Timeline Overview**
 
-**Outcome:**  
-Organizations can reproduce signing events across teams, DAOs, and jurisdictions.
+## **Q1 2027**
+- Krunixbase integration  
+- deterministic CRM + KSeF connector  
+- public Truth API  
+- deterministic multi‑agent workflows  
+- deterministic threshold workflows  
+- deterministic replay + verification toolkit  
 
----
-
-### Milestone 8 — Ecosystem Integrations  
-**Deliverables:**  
-- integration examples for DAOs  
-- integration examples for multisigs  
-- integration examples for L2 sequencers  
-- reproducible verification tooling for auditors  
-
-**Outcome:**  
-Deterministic signing episodes become a reusable building block across Ethereum.
+## **Q2–Q3 2027**
+- Phase III standardization  
+- external integrations  
+- reproducible builds  
+- ecosystem adoption  
+- deterministic API  
+- deterministic reproducibility guidelines  
 
 ---
 
-## Timeline
-
-### Phase IV (Ethereum Integration)  
-**Estimated duration:** 3–4 months  
-- deterministic Ethereum signing  
-- deterministic multisig workflows  
-- deterministic threshold signing  
-- reproducible verification toolkit  
-- documentation and examples  
-
-### Phase V (Standardization & Adoption)  
-**Estimated duration:** 3–5 months  
-- deterministic cryptographic standards  
-- reproducible verification guidelines  
-- cross‑organizizational reproducibility models  
-- ecosystem integrations  
-
----
-
-## Dependencies
+# **Dependencies**
 
 - Rust stable toolchain  
 - Ethereum transaction serialization libraries  
-- no external randomness sources  
-- no external state dependencies  
 - reproducible build environment  
+- zero randomness  
+- zero external state dependencies  
 
 ---
 
-## Contact
+# **Contact**
 
 Email: krunixbase@gmail.com  
-GitHub: https://github.com/Krunixbase/deterministic-signing-episodes  
+GitHub: [https://github.com/Krunixbase/deterministic-signing-episodes](https://github.com/Krunixbase/deterministic-signing-episodes)
+
+---
