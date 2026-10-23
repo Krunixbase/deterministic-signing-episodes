@@ -39,24 +39,21 @@ Each milestone produces a **deterministic, reproducible, auditable release**.
 
 ---
 
-# **3. Pre‑Publication Rules**
+## 3. Pre‑Publication Rules
 
 Before ESP approval:
 
-- the repository **seedtools‑enterprise remains private**  
-- no public tags  
-- no public releases  
-- no public documentation outside the ESP package  
-- no public announcements  
-- no external integrations  
+- grant proposals remain private
+- funding strategy remains private
+- budget documentation remains private
+- proprietary implementation details remain private
+- public repositories may expose non-sensitive architecture and documentation structures
 
 This ensures:
-
-- originality  
-- novelty  
-- compliance with ESP review expectations  
-- protection against forks  
-- protection against premature adoption  
+- protection of funding strategy
+- protection of proprietary implementation details
+- preservation of project novelty
+- safe public project visibility
 
 ---
 
@@ -193,12 +190,11 @@ This ensures **full reproducibility** for ESP reviewers and Ethereum ecosystem a
 
 ---
 
-# **8. Final Rule**
+## 8. Final Rule
 
-> **SeedTools Enterprise is published only after ESP funding begins.  
-> Each milestone is published only after its on‑chain payment is received.**
-
-This is the official, deterministic publication strategy.
+- SeedTools Enterprise public architecture may be published before ESP funding.
+- Grant documentation, funding strategy and proprietary implementation.
+- Details remain private until the appropriate milestone publication phase.
 
 ---
 
