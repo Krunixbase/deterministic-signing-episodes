@@ -217,15 +217,16 @@ Each milestone produces a deterministic, reproducible release.
 
 ---
 
-# **8. Publication Strategy**
+## 8. Publication Strategy
 
-Publication follows the **ESP Milestone Publication Strategy**:
+Publication follows the ESP Milestone Publication Strategy:
 
-- repository becomes public **after first milestone payment**  
-- each milestone → one deterministic release  
-- releases are immutable  
-- documentation is deterministic  
-- verification paths are deterministic  
+- public architecture and non-sensitive documentation may be published before funding
+- grant documentation, budget details and funding strategy remain private
+- each milestone produces one deterministic release
+- releases are immutable
+- documentation is deterministic
+- verification paths are deterministic 
 
 ---
 
